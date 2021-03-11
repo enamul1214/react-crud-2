@@ -4,16 +4,6 @@
   /* border: 1px solid #ddd; */
 }
 
-.header {
-  padding: 15px 0;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-.header h1 {
-  margin: 0;
-}
-
 .contact-list-wrapper .contact-list-heading {
   display: flex;
   justify-content: space-between;

@@ -17,7 +17,7 @@ const ContactList = (props) => {
     });
 
     return (
-        <div className="ui celled list">
+        <div className="ui celled list" style={{padding: '0 15px 15px'}}>
             {renderContactList}
         </div>
     )

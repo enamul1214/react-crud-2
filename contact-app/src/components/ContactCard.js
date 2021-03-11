@@ -4,7 +4,7 @@ import user from '../images/user.png';
 const ContactCard = (props) => {
     const {id, name, email} = props.contact;
     return (
-        <div className="item">
+        <div className="item" style={{padding: `0 10px !important`}}>
             <img className="ui avatar image" src={user} alt={name}/>
             <div className="content">
                 <div className="header">{name}</div>

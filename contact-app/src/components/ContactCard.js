@@ -10,7 +10,8 @@ const ContactCard = (props) => {
                 <div className="header">{name}</div>
                 <div className="">{email}</div>
             </div>
-            <i className="trash outline alternate icon" style={{color: 'red'}}></i>
+            <i className="trash outline alternate icon" style={{color: 'red'}} 
+            onClick={() => props.clickHandler(id)}></i>
             <i className="pencil alternate icon" style={{color: 'blue',marginRight: '5px'}}></i>
         </div>
     )

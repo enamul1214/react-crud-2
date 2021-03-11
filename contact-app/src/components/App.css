@@ -1,42 +1,5 @@
-.App {
-  max-width: 575px;
-  margin: 50px auto 0;
-  /* border: 1px solid #ddd; */
-}
-
-.contact-list-wrapper .contact-list-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 15px;
-}
-
-.button {
-  padding: 7px 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #61dafb;
-  border: 0;
-  cursor: pointer;
-}
-
-.form-group {
-  margin-bottom: 10px;
-}
-
-.input-control {
-  display: block;
-  width: 96%;
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-
 .main {
   margin-top: 5em;
-  padding: 0 15px 15px;
 }
 
 .center {
@@ -50,7 +13,7 @@
 }
 
 .item {
-  padding: 15px 0px !important;
+  padding: 15px 10px !important;
 }
 
 i.icon {

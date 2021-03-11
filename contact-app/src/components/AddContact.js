@@ -1,22 +1,25 @@
 import React, {Component} from 'react'
+import { Link } from "react-router-dom";
 
 class AddContact extends Component{
     state = {
-        name: '',
-        email: ''
-    }
+        name: "",
+        email: "",
+      };
     
-    add = (e) => {
+      add = (e) => {
         e.preventDefault();
-        if(this.state.name === '' && this.state.email === ''){
-            alert('all the filed are required');
+        if (this.state.name === "" || this.state.email === "") {
+          alert("ALl the fields are mandatory!");
+          return;
         }
+
         this.props.addContactHandler(this.state);
-        this.setState({
-            name: '',
-            email: ''
-        });
-    }
+
+        this.setState({ name: "", email: "" });
+        this.props.history.push("/");
+      };
+
     render() {
 
         return (
@@ -35,6 +38,7 @@ class AddContact extends Component{
                         onChange={(e)=> this.setState({email: e.target.value})}/>
                     </div>
                     <button type="submit" className="ui button blue">Add</button>
+                    <Link className="ui button red" to='/'>Cancel</Link>
                 </form>
             </div>
         )
